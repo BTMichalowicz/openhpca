@@ -14,9 +14,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/gvallee/validation_tool/pkg/label"
-	"github.com/openucx/openhpca/tools/internal/pkg/overlap"
-	"github.com/openucx/openhpca/tools/internal/pkg/util"
+	"github.com/BTMichalowicz/validation_tool/pkg/label"
+	"github.com/BTMichalowicz/openhpca/tools/internal/pkg/overlap"
+	"github.com/BTMichalowicz/openhpca/tools/internal/pkg/util"
 )
 
 const (

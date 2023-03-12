@@ -15,14 +15,14 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/gvallee/go_benchmark/pkg/benchmark"
-	"github.com/gvallee/go_osu/pkg/osu"
-	"github.com/gvallee/go_util/pkg/util"
-	"github.com/gvallee/go_workspace/pkg/workspace"
-	"github.com/openucx/openhpca/tools/internal/pkg/download"
-	"github.com/openucx/openhpca/tools/internal/pkg/overlap"
-	"github.com/openucx/openhpca/tools/internal/pkg/smb"
-	openhpcautil "github.com/openucx/openhpca/tools/internal/pkg/util"
+	"github.com/BTMichalowicz/go_benchmark/pkg/benchmark"
+	"github.com/BTMichalowicz/go_osu/pkg/osu"
+	"github.com/BTMichalowicz/go_util/pkg/util"
+	"github.com/BTMichalowicz/go_workspace/pkg/workspace"
+	"github.com/BTMichalowicz/openhpca/tools/internal/pkg/download"
+	"github.com/BTMichalowicz/openhpca/tools/internal/pkg/overlap"
+	"github.com/BTMichalowicz/openhpca/tools/internal/pkg/smb"
+	openhpcautil "github.com/BTMichalowicz/openhpca/tools/internal/pkg/util"
 )
 
 const (

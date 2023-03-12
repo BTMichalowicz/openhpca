@@ -14,8 +14,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/openucx/openhpca/tools/internal/pkg/config"
-	"github.com/openucx/openhpca/tools/internal/pkg/runErrors"
+	"github.com/BTMichalowicz/openhpca/tools/internal/pkg/config"
+	"github.com/BTMichalowicz/openhpca/tools/internal/pkg/runErrors"
 )
 
 const (

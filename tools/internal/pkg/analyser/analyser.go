@@ -17,9 +17,9 @@ import (
 	"gonum.org/v1/plot/plotutil"
 	"gonum.org/v1/plot/vg"
 
-	osuresults "github.com/gvallee/go_osu/pkg/results"
-	"github.com/gvallee/go_util/pkg/util"
-	"github.com/openucx/openhpca/tools/internal/pkg/result"
+	osuresults "github.com/BTMichalowicz/go_osu/pkg/results"
+	"github.com/BTMichalowicz/go_util/pkg/util"
+	"github.com/BTMichalowicz/openhpca/tools/internal/pkg/result"
 )
 
 func preparePoints(n int, x []float64, y []float64) plotter.XYs {

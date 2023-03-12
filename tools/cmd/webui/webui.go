@@ -14,8 +14,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/gvallee/go_util/pkg/util"
-	"github.com/openucx/openhpca/tools/internal/pkg/webui"
+	"github.com/BTMichalowicz/go_util/pkg/util"
+	"github.com/BTMichalowicz/openhpca/tools/internal/pkg/webui"
 )
 
 func main() {

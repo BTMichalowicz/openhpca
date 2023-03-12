@@ -11,8 +11,8 @@ import (
 	"io/ioutil"
 	"path/filepath"
 
-	"github.com/openucx/openhpca/tools/internal/pkg/fileUtils"
-	"github.com/openucx/openhpca/tools/internal/pkg/result"
+	"github.com/BTMichalowicz/openhpca/tools/internal/pkg/fileUtils"
+	"github.com/BTMichalowicz/openhpca/tools/internal/pkg/result"
 )
 
 const (

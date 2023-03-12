@@ -18,19 +18,19 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/gvallee/go_benchmark/pkg/benchmark"
-	"github.com/gvallee/go_hpc_jobmgr/pkg/implem"
-	"github.com/gvallee/go_hpc_jobmgr/pkg/mpi"
-	"github.com/gvallee/go_software_build/pkg/app"
-	"github.com/gvallee/go_util/pkg/util"
-	"github.com/gvallee/validation_tool/pkg/experiments"
-	"github.com/gvallee/validation_tool/pkg/platform"
-	"github.com/openucx/openhpca/tools/internal/pkg/config"
-	"github.com/openucx/openhpca/tools/internal/pkg/fileUtils"
-	"github.com/openucx/openhpca/tools/internal/pkg/overlap"
-	"github.com/openucx/openhpca/tools/internal/pkg/report"
-	"github.com/openucx/openhpca/tools/internal/pkg/score"
-	"github.com/openucx/openhpca/tools/internal/pkg/smb"
+	"github.com/BTMichalowicz/go_benchmark/pkg/benchmark"
+	"github.com/BTMichalowicz/go_hpc_jobmgr/pkg/implem"
+	"github.com/BTMichalowicz/go_hpc_jobmgr/pkg/mpi"
+	"github.com/BTMichalowicz/go_software_build/pkg/app"
+	"github.com/BTMichalowicz/go_util/pkg/util"
+	"github.com/BTMichalowicz/validation_tool/pkg/experiments"
+	"github.com/BTMichalowicz/validation_tool/pkg/platform"
+	"github.com/BTMichalowicz/openhpca/tools/internal/pkg/config"
+	"github.com/BTMichalowicz/openhpca/tools/internal/pkg/fileUtils"
+	"github.com/BTMichalowicz/openhpca/tools/internal/pkg/overlap"
+	"github.com/BTMichalowicz/openhpca/tools/internal/pkg/report"
+	"github.com/BTMichalowicz/openhpca/tools/internal/pkg/score"
+	"github.com/BTMichalowicz/openhpca/tools/internal/pkg/smb"
 )
 
 func displayResults(cfg *config.Data) error {
@@ -345,8 +345,11 @@ func main() {
 				if localMPI.ID == implem.OMPI {
 					e.MpirunArgs = append(e.MpirunArgs, "-x "+overlap.MaxNumEltsEnvVar+"="+overlapNumElts)
 				}
-				if localMPI.ID == implem.MPICH || localMPI.ID == implem.MVAPICH2 {
+				if localMPI.ID == implem.MPICH {
 					e.MpirunArgs = append(e.MpirunArgs, "-genv "+overlap.MaxNumEltsEnvVar+"="+overlapNumElts)
+				}
+                if localMPI.ID == implem.MVAPICH2 {
+                    e.MpirunArgs = append(e.MpirunArgs, overlap.MaxNumEltsEnvVar+"="+overlapNumElts)
 				}
 			}
 

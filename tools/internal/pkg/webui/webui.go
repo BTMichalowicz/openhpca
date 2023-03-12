@@ -15,10 +15,10 @@ import (
 	"sync"
 	"text/template"
 
-	"github.com/gvallee/go_util/pkg/util"
-	"github.com/openucx/openhpca/tools/internal/pkg/analyser"
-	"github.com/openucx/openhpca/tools/internal/pkg/config"
-	"github.com/openucx/openhpca/tools/internal/pkg/result"
+	"github.com/BTMichalowicz/go_util/pkg/util"
+	"github.com/BTMichalowicz/openhpca/tools/internal/pkg/analyser"
+	"github.com/BTMichalowicz/openhpca/tools/internal/pkg/config"
+	"github.com/BTMichalowicz/openhpca/tools/internal/pkg/result"
 )
 
 const (

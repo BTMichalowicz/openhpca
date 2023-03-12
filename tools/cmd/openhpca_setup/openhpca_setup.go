@@ -16,8 +16,8 @@ import (
 	"path/filepath"
 	"runtime"
 
-	"github.com/gvallee/go_util/pkg/util"
-	"github.com/openucx/openhpca/tools/internal/pkg/config"
+	"github.com/BTMichalowicz/go_util/pkg/util"
+	"github.com/BTMichalowicz/openhpca/tools/internal/pkg/config"
 )
 
 func main() {

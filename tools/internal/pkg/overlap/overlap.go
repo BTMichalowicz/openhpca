@@ -15,13 +15,13 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/gvallee/go_benchmark/pkg/benchmark"
-	"github.com/gvallee/go_hpc_jobmgr/pkg/implem"
-	"github.com/gvallee/go_software_build/pkg/app"
-	"github.com/gvallee/go_software_build/pkg/builder"
-	fileutil "github.com/gvallee/go_util/pkg/util"
-	"github.com/gvallee/go_workspace/pkg/workspace"
-	"github.com/openucx/openhpca/tools/internal/pkg/util"
+	"github.com/BTMichalowicz/go_benchmark/pkg/benchmark"
+	"github.com/BTMichalowicz/go_hpc_jobmgr/pkg/implem"
+	"github.com/BTMichalowicz/go_software_build/pkg/app"
+	"github.com/BTMichalowicz/go_software_build/pkg/builder"
+	fileutil "github.com/BTMichalowicz/go_util/pkg/util"
+	"github.com/BTMichalowicz/go_workspace/pkg/workspace"
+	"github.com/BTMichalowicz/openhpca/tools/internal/pkg/util"
 )
 
 type Benchmark struct {
